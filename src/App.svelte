@@ -1,26 +1,19 @@
 <script>
-	export let name;
+  // # # # # # # # # # # # # #
+  //
+  //  TSoaP Client
+  //
+  // # # # # # # # # # # # # #
+
+  // IMPORTS
+  import { Router, Route } from "svelte-routing"
+
+  // ROUTES
+  import World from "./World.svelte"
 </script>
 
-<main>
-	<h1>🌳 Milieu.org</h1>
-</main>
-
-<style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 4em;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
-</style>
+<Router>
+  <Route path="/*" let:params>
+    <World {params} />
+  </Route>
+</Router>

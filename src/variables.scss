@@ -1,0 +1,105 @@
+// TYPOGRAPHY
+$MONO_STACK: "IBM Plex Mono", monospace;
+$SANS_STACK: "IBM Plex Sans", sans-serif;
+$SERIF_STACK: "IBM Plex Serif", sans-serif;
+
+$HERSHEY_SIMPLEX: $MONO_STACK;
+$HERSHEY_DUPLEX: $MONO_STACK;
+$HERSHEY_DASHED: $MONO_STACK;
+
+$FONT_SIZE_SMALL: 12px;
+$FONT_SIZE_BASE: 14px;
+$FONT_SIZE_MEDIUM: $FONT_SIZE_BASE;
+$FONT_SIZE_LARGE: $FONT_SIZE_BASE;
+$SIDEBAR_WIDTH: 400px;
+
+// COLOR
+$COLOR_DARK: rgb(0, 0, 0);
+$COLOR_DARK_OPACITY: rgba(0, 0, 0, 0.8);
+$COLOR_MID_1: rgb(197, 197, 197);
+$COLOR_MID_15: rgb(187, 187, 187);
+$COLOR_MID_2: rgb(153, 153, 153);
+$COLOR_MID_3: rgb(85, 85, 85);
+$COLOR_LIGHT: rgb(240, 240, 240);
+
+$COLOR_LIGHTBLUE: $COLOR_MID_15;
+
+$COLOR_COMMUNICATION: #1cc227;
+$COLOR_CONSENSUS_BUILDING: #a2dafd;
+$COLOR_SENSING: #fff538;
+$COLOR_ARCHIVING: #f8c2e8;
+$COLOR_EXHIBITION: #ed3656;
+
+// SPACING
+$SPACE_BASE: 12px;
+
+$SPACE_XS: $SPACE_BASE / 2;
+$SPACE_S: $SPACE_BASE;
+$SPACE_M: $SPACE_BASE * 1.5;
+$SPACE_L: $SPACE_BASE * 2;
+
+$ITEM_HEIGHT: $SPACE_BASE * 5;
+
+$border_radius: 4px;
+
+// TRANSITIONS
+$transition: cubic-bezier(0.23, 1, 0.32, 1);
+
+// RESPONSIVE
+$breakpoints: (
+  "small": (
+    max-width: 800px,
+  ),
+  "medium": (
+    max-width: 1000px,
+  ),
+  "large": (
+    max-width: 1600px,
+  ),
+  "short": (
+    max-height: 700px,
+  ),
+);
+
+/// Responsive manager.
+/// @access public
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+@mixin screen-size($breakpoint) {
+  $raw-query: map-get($breakpoints, $breakpoint);
+  @if $raw-query {
+    $query: if(
+      type-of($raw-query) == "string",
+      unquote($raw-query),
+      inspect($raw-query)
+    );
+    @media #{$query} {
+      @content;
+    }
+  } @else {
+    @error 'No value found for `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+@mixin hide-scroll {
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+}
+
+@mixin text {
+  .text{
+  padding: $SPACE_M $SPACE_M 0 $SPACE_M;
+  font-family: $SANS_STACK;
+  font-size: $FONT_SIZE_BASE;
+  font-weight: 400;
+  line-height: 1.4em;
+  letter-spacing: 0.02em;
+  
+  @include screen-size("small") {
+    padding-bottom: $SPACE_M ;
+  }
+  }
+
+}
