@@ -1,13 +1,13 @@
-# 🌳 Milieu (frontend)
+# 🌳 Millieu (frontend)
 
-Milieu is an customisable open-source interface that enables users to turn conferences, online communities or group chats into explorable social worlds.
+Millieu is an customisable open-source interface that enables users to turn conferences, online communities or group chats into explorable social worlds.
 
 ## Get started
 
 Install the dependencies...
 
 ```bash
-cd milieu.org
+cd millieu.org
 npm install
 ```
 
