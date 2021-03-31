@@ -124,7 +124,7 @@
 </style>
 
 <!-- METADATA -->
-<MetaData post={audioInstallation} />
+<!-- <MetaData post={audioInstallation} /> -->
 
 <div class="audio-single" in:fade use:links>
   {#if audioInstallation.title}
