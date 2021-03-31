@@ -226,7 +226,7 @@
   {/if}
 
   <!-- RELATED EVENTS -->
-  {#if Array.isArray(get(caseStudy, 'connectedEvents', false))}
+  {#if Array.isArray(get(caseStudy, 'connectedEvents', false)) && caseStudy.connectedEvents.length > 0}
     <div class="related-events">
       <EventList events={caseStudy.connectedEvents} related={true} />
     </div>

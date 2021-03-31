@@ -1250,8 +1250,8 @@
       // ___ Set username from cookie
       localUserName.set(usernameCookie);
       // ___ Show welcome card if user has not visited in last 7 days
-      showWelcomeCard = Cookies.get("postrational-visitor") ? false : true;
-      // showWelcomeCard = true
+      // showWelcomeCard = Cookies.get("postrational-visitor") ? false : true;
+      showWelcomeCard = false
       Cookies.set("postrational-visitor", "true", { expires: 7 });
       // __ Start the game...
       initializeGameWorld();
@@ -1930,10 +1930,7 @@
   {#if matches}
     <Clock />
 
-    <div class="link-to-ac">
-      <a href="https://library.trust.support/" target="_blank">to Cybernetics
-        Library</a>
-    </div>
+    <div class="link-to-ac"></div>
 
     {#if localPlayers[$localUserSessionID]}
       <!-- MOBILE CALENDAR-->
@@ -2037,7 +2034,6 @@
   {#if !audioChatActive && $currentAudioRoom && $localUserName}
     <div class="audiochat-box">
       <div class="message">
-        Nearby audioroom
         <strong>{get(audioRoomNames, 'audioRoom_' + $currentAudioRoom, 'ERROR')}</strong>
       </div>
 

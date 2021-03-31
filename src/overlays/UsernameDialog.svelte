@@ -37,7 +37,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+    background: black;
     color: white;
     display: flex;
     justify-content: center;
@@ -50,8 +50,8 @@
       font-size: 18px;
       text-align: center;
       user-select: none;
-      border-radius: 30px;
-      background: $COLOR_LIGHTBLUE;
+      border-radius: $border_radius;
+      background: $COLOR_LIGHT;
       display: flex;
 
       @include screen-size("small") {
@@ -64,7 +64,7 @@
         float: left;
         width: calc(100% - 60px);
         display: block;
-        background: transparent;
+        background: $COLOR_MID_1;
         border: 1px solid $COLOR_DARK;
         color: $COLOR_DARK;
         border-radius: $border_radius;
@@ -82,7 +82,7 @@
         }
 
         &::placeholder{
-          opacity: 0.5;
+          opacity: 0.7;
         }
 
         input[type="text"] {

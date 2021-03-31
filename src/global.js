@@ -62,8 +62,8 @@ export const QUERY = {
 }
 
 export const TEXT_STYLE_AVATAR = {
-  fontFamily: "hersheyduplex",
-  fontWeight: "bold",
+  fontFamily: "IBM Plex Mono",
+  // fontWeight: "bold",
   fontSize: 14,
   align: "center",
   fill: "#999999",
@@ -72,8 +72,8 @@ export const TEXT_STYLE_AVATAR = {
 }
 
 export const TEXT_STYLE_AVATAR_AUTHENTICATED = {
-  fontFamily: "hersheyduplex",
-  fontWeight: "bold",
+  fontFamily: "IBM Plex Mono",
+  // fontWeight: "bold",
   fontSize: 14,
   align: "center",
   fill: "black",
@@ -82,8 +82,8 @@ export const TEXT_STYLE_AVATAR_AUTHENTICATED = {
 }
 
 export const TEXT_STYLE_CASE_STUDY = {
-  fontFamily: "hersheyduplex",
-  fontWeight: "bold",
+  fontFamily: "IBM Plex Mono",
+  // fontWeight: "bold",
   fontSize: 14,
   align: "center",
   fill: "white",
