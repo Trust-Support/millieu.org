@@ -4,12 +4,12 @@ Millieu is an customisable open-source interface that enables users to turn conf
 
 ## Millieu components
 
-+ [Frontend](https://github.com/pwrstudio/milieu.org)
-+ [Server](https://github.com/pwrstudio/milieu-server)
-+ [Moderator dashboard](https://github.com/pwrstudio/milieu-moderator)
-+ [Discourse bridge](https://github.com/pwrstudio/milieu-discourse-bridge)
-+ [Graphics processor](https://github.com/pwrstudio/milieu-graphics-processor)
-+ [Sanity CMS](https://github.com/pwrstudio/milieu-sanity-admin)
++ [Frontend](https://github.com/pwrstudio/millieu.org)
++ [Server](https://github.com/pwrstudio/millieu-server)
++ [Moderator dashboard](https://github.com/pwrstudio/millieu-moderator)
++ [Discourse bridge](https://github.com/pwrstudio/millieu-discourse-bridge)
++ [Graphics processor](https://github.com/pwrstudio/millieu-graphics-processor)
++ [Sanity CMS](https://github.com/pwrstudio/millieu-sanity-admin)
 
 ## Get started
 
