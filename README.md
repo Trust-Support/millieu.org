@@ -2,6 +2,15 @@
 
 Millieu is an customisable open-source interface that enables users to turn conferences, online communities or group chats into explorable social worlds.
 
+## Millieu components
+
++ [Frontend](https://github.com/pwrstudio/milieu.org)
++ [Server](https://github.com/pwrstudio/milieu-server)
++ [Moderator dashboard](https://github.com/pwrstudio/milieu-moderator)
++ [Discourse bridge](https://github.com/pwrstudio/milieu-discourse-bridge)
++ [Graphics processor](https://github.com/pwrstudio/milieu-graphics-processor)
++ [Sanity CMS](https://github.com/pwrstudio/milieu-sanity-admin)
+
 ## Get started
 
 Install the dependencies...
